@@ -169,8 +169,8 @@ h1 {
 }
 .program-button-container p {
   position: absolute;
-  top: 20px;
-  left: 250px;
+  top: 15px;
+  left: 230px;
   text-align: right;
   margin-right: 20px;
   font-size: 14px;
@@ -188,10 +188,10 @@ h1 {
 
 .arrow-image {
   position: absolute;
-  top: 60px;
+  top: 55px;
   left: 341px;
-  width: 140px;
-  height: 51.79px;
+  width: 110px;
+  height: 41.79px;
 }
 
 @media (max-width: 768px) {
@@ -213,8 +213,29 @@ h1 {
   .slide {
     flex: 0 0 50%;
   }
+  .program-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .program-button-container p {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .program-button-container #programButton {
+    width: 30%;
+  }
+  .program-button-container .arrow-image {
+    position: absolute;
+    top: 50px;
+    left: 169px;
+    width: 75px;
+    height: 30px;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .slide {
     flex: 0 0 100%;
   }
@@ -223,12 +244,22 @@ h1 {
     align-items: center;
   }
   .program-button-container p {
-    position: static;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     text-align: center;
+    text-wrap: wrap;
     margin-bottom: 10px;
   }
   .program-button-container #programButton {
-    width: 100%;
+    width: 30%;
+  }
+  .program-button-container .arrow-image {
+    position: absolute;
+    top: 50px;
+    left: 129px;
+    width: 45px;
+    height: 20px;
   }
 }
 #modalDescription {
