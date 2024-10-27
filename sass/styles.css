@@ -1,0 +1,237 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.subtitle a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevents scrollbar */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 8px;
+  max-height: 80vh;
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-height: 100%; /* Adjust to prevent overflow */
+}
+.modal .modal-content .modal-image {
+  flex: 0 0 120px;
+  margin-right: 25px;
+}
+.modal .modal-content .modal-image img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal .modal-content .modal-info {
+  flex: 1;
+  display: flex;
+}
+.modal .modal-content .modal-info .speaker-details {
+  flex: 0 0 20%;
+  padding-right: 5px;
+}
+.modal .modal-content .modal-info .speaker-description {
+  flex: 0 0 85%;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+  padding-right: 25px;
+  padding-top: 25px;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  line-height: 1.5;
+}
+.modal .modal-content .modal-info .speaker-description p {
+  width: 90%;
+}
+.modal .close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 20px 0;
+  padding: 0 40px;
+}
+.slider-wrapper .slider-container {
+  overflow: hidden;
+}
+.slider-wrapper .slider-container .slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slider-wrapper .slider-container .slider .slide {
+  flex: 0 0 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.slider-wrapper .slider-container .slider .slide .slide-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.slider-wrapper .slider-container .slider .slide .slide-content img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.arrow.left-arrow {
+  left: -40px;
+}
+.arrow.right-arrow {
+  right: -40px;
+}
+
+.program-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  gap: 10px;
+}
+.program-button-container p {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.program-button-container #programButton {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 350px;
+}
+
+.arrow-image {
+  position: absolute;
+  top: 60px;
+  left: 341px;
+  width: 140px;
+  height: 51.79px;
+}
+
+@media (max-width: 768px) {
+  .modal-content,
+  .modal-info {
+    flex-direction: column;
+  }
+  .modal-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .speaker-description {
+    border-left: none;
+    border-top: 1px solid #ccc;
+    padding-left: 0;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .slide {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 480px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+  .program-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .program-button-container p {
+    position: static;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .program-button-container #programButton {
+    width: 100%;
+  }
+}
+#modalDescription {
+  margin: 0;
+  padding-right: 10px;
+}/*# sourceMappingURL=styles.css.map */
