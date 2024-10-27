@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Speakers for the Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>View our Featured Speakers for the Event</h1>
+        <p class="subtitle">Speakers are core contributors and industry thought leaders working at <a href="#">companies</a> that push for innovation.</p>
+        
+        <div id="speakerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Speaker">
+                </div>
+                <div class="modal-info">
+                    <div class="speaker-details">
+                        <h2 id="modalName"></h2>
+                        <p id="modalTitle"></p>
+                        <p id="modalCompany"></p>
+                        <div class="social-icons">
+                            <a href="#" id="website">&#127760;</a>
+                            <a href="#" id="twitter">&#120143;</a>
+                            <a href="#" id="linkedin">in</a>
+                        </div>
+                    </div>
+                    <div class="speaker-description">
+                        <p id="modalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-wrapper" style="padding: 0 40px;">
+            <button class="arrow left-arrow">&lt;</button>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image1.jpg" alt="John Doe">
+                            <h3>John Doe</h3>
+                            <p>Chief Marketing Officer</p>
+                            <p>Acme Corp</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image2.jpg" alt="Jane Smith">
+                            <h3>Jane Smith</h3>
+                            <p>Chief Engagement Officer</p>
+                            <p>Acquia</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image3.jpg" alt="Bob Johnson">
+                            <h3>Bob Johnson</h3>
+                            <p>Chief Technical Developer</p>
+                            <p>Pantheon</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image4.jpg" alt="Alice Brown">
+                            <h3>Alice Brown</h3>
+                            <p>Chief Marketing Officer</p>
+                            <p>Specbee</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image1.jpg" alt="Eva White">
+                            <h3>Eva White</h3>
+                            <p>Chief Data Scientist</p>
+                            <p>DataTech</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image2.jpg" alt="Frank Miller">
+                            <h3>Frank Miller</h3>
+                            <p>Chief Product Officer</p>
+                            <p>ProductCo</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image3.jpg" alt="Grace Lee">
+                            <h3>Grace Lee</h3>
+                            <p>Chief Design Officer</p>
+                            <p>DesignHub</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="image4.jpg" alt="Henry Chen">
+                            <h3>Henry Chen</h3>
+                            <p>Chief Innovation Officer</p>
+                            <p>InnovateCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right-arrow">&gt;</button>
+        </div>
+        
+        <div class="program-button-container">
+            <p>Click here to see<br>the full program</p>
+            <img src="image.png" class="arrow-image"/>
+            <button id="programButton">See the Program</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
